@@ -38,4 +38,7 @@ jobs:
       - name: start minikube
         id: minikube
         uses: medyagh/setup-minikube@latest
-      - name: kubectl get po -A
+      - name: check minikube pods and health
+        run : |
+          minikube status
+          kubectl get po -A
