@@ -43,6 +43,7 @@ jobs:
        #   minikube status
        #   kubectl get po -A
   packageHelm:
+    runs-on : ubuntu-latest
     steps:
       - name: am testing the unthinkable
         run: |
