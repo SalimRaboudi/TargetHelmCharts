@@ -42,8 +42,7 @@ jobs:
       #  run : |
        #   minikube status
        #   kubectl get po -A
-  testChika:
-    runs-on: ubuntu-latest
+  packageHelm:
     steps:
       - name: am testing the unthinkable
         run: |
