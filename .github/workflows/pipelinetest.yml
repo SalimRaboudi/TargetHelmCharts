@@ -35,13 +35,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ls -l
-      - name: start minikube
-        id: minikube
-        uses: medyagh/setup-minikube@latest
-      - name: check minikube pods and health
-        run : |
-          minikube status
-          kubectl get po -A
+     # - name: start minikube
+      #  id: minikube
+      #  uses: medyagh/setup-minikube@latest
+     # - name: check minikube pods and health
+      #  run : |
+       #   minikube status
+       #   kubectl get po -A
   testChika:
     runs-on: ubuntu-latest
     steps:
